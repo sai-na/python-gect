@@ -4,7 +4,8 @@ def add():
     num1=float((num1_entry.get()))
     num2=float((num2_entry.get()))
     result=num1+num2
-    result_text="Sum:"+" "+str(result)
+    result_text = "Sum: " + "{:.2f}".format(result)
+
     result_label.config(text=result_text)
 def Subtract():
     num1=float((num1_entry.get()))
@@ -22,7 +23,8 @@ def Divide():
     num1=float((num1_entry.get()))
     num2=float((num2_entry.get()))
     result=num1/num2
-    result_text="Quotient:"+" "+str(result)
+    result_text="Quotient: "+ "{:.2f}".format(result)
+ 
     result_label.config(text=result_text)
 
 root=Tk()
